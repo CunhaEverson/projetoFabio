@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <script src="javascript/empresa.js"></script>
+    <title>Novo chamado</title>
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <h1>F. Martins Climatização</h1>
+                </a>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="novochamado.html">Para Empresas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="hero">
+            <div class="container">
+                <form id="formSearch">
+                    <input type="search" placeholder="O QUE VOCÊ ESTÁ PROCURANDO?" name="inputSearch" id="inputSearch">
+                </form>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <div class="container">
+            <h3>Abertura de Chamados</h3>
+            <section class="pratos" id="product-div"></section>
+        </div>
+        <form class="container" id="form-product" autocomplete="on">
+            <div class="form-group2">
+                <fieldset>
+                    <legend>Solicitação</legend><br>
+                    <div class="form-group">
+                        <label for="nome">Nome da Empresa:</label>
+                        <input type="text" id="nome" name="nome" class="form-control" required="required">
+                    </div>
+                    <div class="form-group2">
+                        <label for="cnpj">CNPJ:</label>
+                        <input type="text" id="cnpj" name="cnpj" class="form-control" required="required">
+                    </div>
+                    <div class="form-group2">
+                        <label for="setor">Departamento/Setor da Empresa:</label>
+                        <input type="text" id="setor" name="setor" class="form-control" required="required">
+                    </div>
+
+                    <legend class="form-group" required="required"> Selecione obrigatoriamente os itens :<br><br>
+                        <div class="custom-checkbox">
+                            <input id="checkbox-1" type="checkbox" value="SERVIÇO DE URGÊNCIA" name="checkbox">
+                            <label for="checkbox-1">SERVIÇO DE URGÊNCIA :</label>
+                        </div>
+                        <input class="input-radio" value="Ar-Condicionado Barulhento" type="radio" id="8" name="grupo1">
+                        <label for="8">
+                            <span class="radio-btn">Ar-Condicionado Barulhento</span>
+                        </label>
+                        <input class="input-radio" value="Filtro de Ar Sujo" type="radio" id="9" name="grupo1">
+                        <label for="9">
+                            <span class="radio-btn">Filtro de Ar Sujo</span>
+                        </label>
+                        <input class="input-radio" value="Vazamento de Refrigerante" type="radio" id="10" name="grupo1">
+                        <label for="10">
+                            <span class="radio-btn">Vazamento de Refrigerante</span>
+                        </label>
+                        <input class="input-radio" value="Congelamento do Ar-Condicionado" type="radio" id="11"
+                            name="grupo1">
+                        <label for="11">
+                            <span class="radio-btn">Congelamento do Ar-Condicionado</span>
+                        </label>
+                        <input class="input-radio" value="Não Sopra Ar Frio" type="radio" id="12" name="grupo1">
+                        <label for="12">
+                            <span class="radio-btn">Não Sopra Ar Frio</span>
+                        </label>
+                        <input class="input-radio" value="Ventilador Não Gira" type="radio" id="13" name="grupo1">
+                        <label for="13">
+                            <span class="radio-btn">Ventilador Não Gira</span>
+                        </label>
+                        <input class="input-radio" value="Fusíveis Soprados" type="radio" id="14" name="grupo1">
+                        <label for="14">
+                            <span class="radio-btn">Fusíveis Soprados</span>
+                        </label>
+                        <input class="input-radio" value="Cheiro Ruim" type="radio" id="15" name="grupo1">
+                        <label for="15">
+                            <span class="radio-btn">Cheiro Ruim</span>
+                        </label>
+                        <input class="input-radio" value="Ciclo Curto (Ligando e Desligando)" type="radio" id="16"
+                            name="grupo1">
+                        <label for="16">
+                            <span class="radio-btn">Ciclo Curto (Ligando e Desligando)</span>
+                        </label>
+                        <input class="input-radio" value="Não Funciona" type="radio" id="17" name="grupo1">
+                        <label for="17">
+                            <span class="radio-btn">Não Funciona</span>
+                        </label>
+                        <input class="input-radio" value="Problema com o Termostato" type="radio" id="18" name="grupo1">
+                        <label for="18">
+                            <span class="radio-btn">Problema com o Termostato</span>
+                        </label>
+                        <input class="input-radio" value="Baixo Desempenho de Refrigeração" type="radio" id="19"
+                            name="grupo1">
+                        <label for="19">
+                            <span class="radio-btn">Baixo Desempenho de Refrigeração</span>
+                        </label>
+                        <input class="input-radio" value="Drenagem Ineficiente" type="radio" id="20" name="grupo1">
+                        <label for="20">
+                            <span class="radio-btn">Drenagem Ineficiente</span>
+                        </label>
+                        <input class="input-radio" value="Oscilações de Temperatura" type="radio" id="21" name="grupo1">
+                        <label for="21">
+                            <span class="radio-btn">Oscilações de Temperatura</span>
+                        </label>
+                        <input class="input-radio" value="Ruído de Vibração" type="radio" id="22" name="grupo1">
+                        <label for="22">
+                            <span class="radio-btn">Ruído de Vibração</span>
+                        </label>
+                        <input class="input-radio" value="Desligamento Inesperado" type="radio" id="23" name="grupo1">
+                        <label for="23">
+                            <span class="radio-btn">Desligamento Inesperado</span>
+                        </label>
+                        <input class="input-radio" value="Excesso de Umidade" type="radio" id="24" name="grupo1">
+                        <label for="24">
+                            <span class="radio-btn">Excesso de Umidade</span>
+                        </label>
+                        <input class="input-radio" value="Alto Consumo de Energia" type="radio" id="25" name="grupo1">
+                        <label for="25">
+                            <span class="radio-btn">Alto Consumo de Energia</span>
+                        </label>
+                        <input class="input-radio" value="Problemas com o Controle Remoto" type="radio" id="26"
+                            name="grupo1">
+                        <label for="26">
+                            <span class="radio-btn">Problemas com o Controle Remoto</span>
+                        </label>
+                        <input class="input-radio" value="Odor de Queimado" type="radio" id="27" name="grupo1">
+                        <label for="27">
+                            <span class="radio-btn">Odor de Queimado</span>
+                        </label><br><br>
+                        <div class="custom-checkbox">
+                            <input id="checkbox-2" type="checkbox" value="MENSAL" name ="checkbox">
+                            <label for="checkbox-2">MENSAL :</label>
+                        </div>
+                        <input class="input-radio" value="Efetuar a limpeza dos filtros de ar" type="radio" id="1"
+                            name="grupo1">
+                        <label for="1">
+                            <span class="radio-btn">Efetuar a limpeza dos filtros de ar</span>
+                        </label>
+                        <input class="input-radio" value="Efetuar a limpeza externa do gabinete do evaporador"
+                            type="radio" id="2" name="grupo1">
+                        <label for="2">
+                            <span class="radio-btn">Efetuar a limpeza externa do gabinete do evaporador</span>
+                        </label>
+                        <input class="input-radio" value="Verificar operação de drenagem e corrigir caso necessário"
+                            type="radio" id="3" name="grupo1">
+                        <label for="3">
+                            <span class="radio-btn">Verificar operação de drenagem e corrigir caso necessário</span>
+                        </label>
+                        <input class="input-radio" value="Efetuar a Limpeza da bandeja do Condensador" type="radio"
+                            id="4" name="grupo1">
+                        <label for="4">
+                            <span class="radio-btn">Efetuar a Limpeza da bandeja do Condensador</span>
+                        </label>
+                        <input class="input-radio" value="Verificar e corrigir ruídos e vibrações anormais" type="radio"
+                            id="5" name="grupo1">
+                        <label for="5">
+                            <span class="radio-btn">Verificar e corrigir ruídos e vibrações anormais</span>
+                        </label>
+                        <input class="input-radio"
+                            value="Verificar a operação dos termostatos, controles e sensores de temperatura"
+                            type="radio" id="6" name="grupo1">
+                        <label for="6">
+                            <span class="radio-btn">Verificar a operação dos termostatos, controles e sensores de
+                                temperatura</span>
+                        </label>
+                        <input class="input-radio"
+                            value="Verificar e eliminar odores desagradáveis nos ambientes climatizados" type="radio"
+                            id="7" name="grupo1">
+                        <label for="7">
+                            <span class="radio-btn">Verificar e eliminar odores desagradáveis nos ambientes
+                                climatizados</span>
+                        </label><br><br>
+                        <div class="custom-checkbox">
+                            <input id="checkbox-3" type="checkbox" value="TRIMESTRAL" name ="checkbox">
+                            <label for="checkbox-3">TRIMESTRAL :</label>
+                        </div>
+                        <input class="input-radio"
+                            value="Efetuar a limpeza da serpentina/ventilador do evaporador/condensador" type="radio"
+                            id="28" name="grupo1">
+                        <label for="28">
+                            <span class="radio-btn">Efetuar a limpeza da serpentina/ventilador do evaporador/condensador</span>
+                        </label>
+                        <input class="input-radio"
+                            value="Efetuar a limpeza externa dos difusores de ar" type="radio"
+                            id="29" name="grupo1">
+                        <label for="29">
+                            <span class="radio-btn">Efetuar a limpeza externa dos difusores de ar</span>
+                        </label>
+                        <input class="input-radio"
+                            value="Verificar e corrigir reaperto de terminais/conexões elétricas, contatoras, botoeiras e disjuntores e etc" type="radio"
+                            id="30" name="grupo1">
+                        <label for="30">
+                            <span class="radio-btn">Verificar e corrigir reaperto de terminais e conexões elétricas</span>
+                        </label>
+                        <input class="input-radio"
+                            value="Verificar corrente / pressão / tensão" type="radio"
+                            id="31" name="grupo1">
+                        <label for="31">
+                            <span class="radio-btn">Verificar corrente / pressão / tensão</span>
+                        </label><br><br>
+                        <div class="custom-checkbox">
+                            <input id="checkbox-4" type="checkbox" value="SEMESTRAL" name ="checkbox">
+                            <label for="checkbox-4">SEMESTRAL :</label>
+                        </div>
+                        <input class="input-radio"
+                            value="Verificar e corrigir focos de corrosão nos equipamentos/ acessórios" type="radio"
+                            id="32" name="grupo1">
+                        <label for="32">
+                            <span class="radio-btn">Verificar e corrigir focos de corrosão nos equipamentos/ acessórios</span>
+                        </label>
+                        <input class="input-radio"
+                            value="Verificar estado dos compressores" type="radio"
+                            id="33" name="grupo1">
+                        <label for="33">
+                            <span class="radio-btn">Verificar estado dos compressores</span>
+                        </label>
+                        <input class="input-radio"
+                            value="Limpeza e organização da casa de máquinas" type="radio"
+                            id="34" name="grupo1">
+                        <label for="34">
+                            <span class="radio-btn">Limpeza e organização da casa de máquinas</span>
+                        </label><br><br>
+                        <div class="custom-checkbox">
+                            <input id="checkbox-5" type="checkbox" value="ANUAL" name ="checkbox">
+                            <label for="checkbox-5">ANUAL :</label>
+                        </div>
+                        <input class="input-radio"
+                            value="Efetuar lubrificação geral do equipamento" type="radio"
+                            id="35" name="grupo1">
+                        <label for="35">
+                            <span class="radio-btn">Efetuar lubrificação geral do equipamento</span>
+                        </label>
+                        <input class="input-radio"
+                            value="Verificar estado dos suportes e coxins" type="radio"
+                            id="36" name="grupo1">
+                        <label for="36">
+                            <span class="radio-btn">Verificar estado dos suportes e coxins</span>
+                        </label>
+                        <input class="input-radio"
+                            value="Verificar isolamento térmico das linhas de cobre" type="radio"
+                            id="37" name="grupo1">
+                        <label for="37">
+                            <span class="radio-btn">Verificar isolamento térmico das linhas de cobre</span>
+                        </label>
+                        <input class="input-radio"
+                            value="Jateamento das serpentinas, aplicação de produtos para limpeza das unidades evaporadoras e condensadoras" type="radio"
+                            id="38" name="grupo1">
+                        <label for="38">
+                            <span class="radio-btn">Aplicação de produtos para limpeza das unidades</span>
+                        </label>
+                    </legend>
+                    <div class="form-group2">
+                        <label for="address">Endereço:</label>
+                        <input type="text" name="address" id="address" class="form-control"
+                            placeholder="Ex:. Av Boa Viagem, nº - Boa Viagem, Recife - PE" required="required">
+                    </div>
+                    <div class="form-group2">
+                        <label for="fone">Telefone com DDD*:</label>
+                        <input type="tel" id="fone" name="fone" class="form-control">
+                    </div>
+                    <div class="form-group2">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" class="form-control">
+                    </div>
+                    <div class="form-grupo2">
+                        <label for="tipo">Tipo de equipamento com defeito/Instação:</label>
+                        <select name="tipo" id="tipo" class="form-control" required="required">
+                            <option value="">Por favor, escolha uma das opções:</option>
+                            <option value="Ar-tipo janela">TIPO JANELA</option>
+                            <option value="Split">SPLIT</option>
+                            <option value="Split Cassete">SPLIT CASSETE</option>
+                            <option value="Split Inverter">SPLIT INVERTER</option>
+                            <option value="Multi Split">MULTI SPLIT</option>
+                            <option value="Recursos Smart">RECURSO SMART</option>
+                        </select><br><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="msg">Descreva sobre o problema:</label>
+                        <textarea type="text" id="msg" name="msg" class="form-control"></textarea>
+                    </div>
+                </fieldset>
+            </div>
+
+
+        </form>
+
+
+
+
+
+        <div class="btn-group">
+            <button type="submit" id="btn" class="btn btn-success" onclick="enviarMensagemWhatsApp()">Gerar
+                Chamado</button>
+
+        </div>
+
+    </main>
+    <!--<footer>
+        <div class="container">
+            <p>Copyright © F.Martins Climatização - Todos os Direitos Reservados!</p>
+        </div>
+    </footer>-->
+
+
+
+</body>
+
+</html>

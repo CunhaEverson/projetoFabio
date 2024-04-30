@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <title>Martins Climatização</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <h1>F. Martins Climatização</h1>
+                </a>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="novochamado.html">Para Empresas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="hero">
+            <div class="container">
+                <form id="formSearch">
+                    <input type="search" placeholder="O QUE VOCÊ ESTÁ PROCURANDO?" name="inputSearch" id="inputSearch">
+                </form>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <div class="container">
+            <h3>Serviços</h3>
+            <section class="pratos" id="product-div"></section>
+        </div>
+
+        <div class="modal hide">
+            <form class="modal form" id="form-product">
+                <div class="form-group">
+                    <label for="title">Serviço</label>
+                    <input type="text" name="title" id="title" class="form-control"
+                        placeholder="Ex.: Serviço de instalação" required="required">
+                </div>
+                <div class="form-grupo">
+                    <label for="quantity">Tipos de Ar:</label>
+                    <select name="quantity" id="quantity" class="form-control" required="required">
+                        <option value="">Por favor, escolha uma das opções:</option>
+                        <option value="tipo janela">TIPO JANELA</option>
+                        <option value="Split">SPLIT</option>
+                        <option value="Split Cassete">SPLIT CASSETE</option>
+                        <option value="Split Inverter">SPLIT INVERTER</option>
+                        <option value="Multi Split">MULTI SPLIT</option>
+                        <option value="Recursos Smart">RECURSO SMART</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="name">Seu nome</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Ex.: João da Silva"
+                        required="required">
+                </div>
+                <div class="form-group">
+                    <label for="address">Localidade/Endereço</label>
+                    <input type="text" name="address" id="address" class="form-control"
+                        placeholder="Ex. R. do Príncipe, 526 - Boa Vista, Recife - PE" required="required">
+                </div>
+                <div class="form-group">
+                    <label for="payment">Pagamento</label>
+                    <select name="payment" id="payment" class="form-control" required="required">
+                        <option value="dinheiro">Dinheiro</option>
+                        <option value="PIX">PIX</option>
+                        <option value="Cartão no débito">Cartão no débito</option>
+                        <option value="Cartão de crédito">Cartão de crédito</option>
+                    </select>
+                </div>
+                <div class="btn-group">
+                    <button type="submit" class="btn btn-success">Finalizar Pedido</button>
+                    <button type="button" class="btn btn-danger" onclick="modalFunc()">Cancelar</button>
+                </div>
+            </form>
+        </div>
+        <a class="float-whatsapp" href="https://wa.me/558197915239" target="_blank">
+            <img class="seta" src="Img/whatsapp.svg" alt="Ícone WhatsApp">
+        </a>
+    </main>
+    <footer>
+        <div class="container">
+            <p>Copyright © F.Martins Climatização - Todos os Direitos Reservados!</p>
+        </div>
+    </footer>
+    
+    <script src="javascript/produtos.js"></script>
+    <script src="javascript/app.js"></script>
+
+
+</body>
+
+</html>
