@@ -136,6 +136,7 @@ main .container .pratos{
 }
 
 footer{
+    font-size: 10px;
     padding: 10px 0px;
 }
 footer .container p{
@@ -246,7 +247,7 @@ input[type="radio"] + label{
     -webkit-box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.2);
     box-shadow: 0px 0px 1px 1px rgba(255, 255, 255,0.2);
     height: 0px;
-    width: 500px;
+    width: 300px;
     margin-left: 23px; /*Avastar*/
     margin-top: -10px;  
     margin-bottom: 15px;
@@ -345,6 +346,7 @@ fieldset{
 #id{
     width: 100%;
 }
+/***Botao Whatsapp **/
 .float-whatsapp {
     background-color: #3DD054;
     display: block;
@@ -366,3 +368,95 @@ fieldset{
     -webkit-filter: brightness(0) saturate(100%) invert(0%) sepia(3%) saturate(1014%) hue-rotate(341deg) brightness(100%) contrast(91%);
   filter: brightness(0) saturate(100%) invert(0%) sepia(3%) saturate(1014%) hue-rotate(341deg) brightness(100%) contrast(91%);
 }
+/*** Area Fale Conosco *****/
+.footer-main-top-section{
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 950px) {
+    .footer-main-top > * + * {
+        margin-top: 60px;
+    }
+}
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+    display: block;
+}
+*{
+    box-sizing: border-box;
+}
+section {
+    display: block;
+    unicode-bidi: isolate;
+}
+.footer-main {
+    background-color: #f0eff8;
+    color: #000;
+    padding-bottom: 45px;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+.icon-instagram2:before {
+    content: "\e902";
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon-site' !important;
+    speak-as: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.footer-main-top-section-social a {
+    display: block;
+    font-size: 22px;
+    color: #111;
+    margin-right: 15px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+li {
+    text-align: -webkit-match-parent;
+}
+.footer-main-top-section-social {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    list-style: outside none;
+    padding: 0;
+}
+ul {
+    list-style-type: disc;
+}
+.footer-main-top-section {
+    font-size: 14px;
+}
+.icon-facebook2:before {
+    content: "\e901";
+}
+.icon-youtube2:before {
+    content: "\e905";
+}
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon-site' !important;
+    speak-as: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+

@@ -84,7 +84,7 @@ const loadSearch = (form, productsDivId) => {
 
 
 }
-/* GERAÇÃO DE id*/
+/* GERAÇÃO DE id
 
 function gerarUUID() {
     return 'FxxxxxxxxxxM'.replace(/[xy]/g, function(c) {
@@ -92,12 +92,12 @@ function gerarUUID() {
     const v = c === 'x' ? r : (r & 0x3 | 0x8);
     return v.toString(16);
     });
-}
+}*/
 
 
 
 
 
 loadProducts(produtos, '#product-div')
-checkout('558197915239')
+checkout('558195156752')
 loadSearch(document.querySelector('#formSearch'), '#product-div')
