@@ -31,17 +31,19 @@ header nav .menu ul li a{
     font-weight:bold;
     font-size: 1.2rem;
 }
-header .hero{
-    background-image: url('../Img/principal2.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media (min-width: 150px){
+    header .hero{
+        background-image: url('../Img/principal2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 23vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
 }
-
 body a#aId{
    
     background-size: cover;
@@ -58,12 +60,12 @@ header .hero #formSearch{
     display: flex;
     justify-content: right;
     align-items: right;
-    padding-top: 100px;
+    padding-top: 108px;
 }
 
 header .hero #formSearch input{
-    width: 49vw;
-    padding: 10px;
+    width: 42vw;
+    padding: 0px;
     border-radius: 5px;
     border: 1px solid rgba(0,0,0, .3);
     text-align: center;
@@ -160,7 +162,7 @@ footer .container p{
     align-items: center;
 }
 @media (min-width: 600px){
-    main .container .pratos{
+    main .container .pratos {
         flex-direction: row;
         justify-content: space-around;
         flex-wrap: wrap;
